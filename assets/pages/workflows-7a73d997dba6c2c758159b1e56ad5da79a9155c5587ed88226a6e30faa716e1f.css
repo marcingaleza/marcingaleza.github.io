@@ -1,0 +1,25 @@
+.hero {
+  position: relative; }
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: url(/assets/pages/workflows/bgHero--workflows-e6c7e0d67f6b095e988bcc88c7e7bfa70d2a67e5b4309890a5d9e74c84c695ad.png) right bottom no-repeat;
+  background-size: contain; }
+
+.hero .container {
+  position: relative;
+  z-index: 2; }
+
+.hero h1 {
+  margin-top: 1rem; }
+
+.p-workflows__howItWorks {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto; }
