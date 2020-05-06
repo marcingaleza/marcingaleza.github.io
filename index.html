@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="https://static.filestackapi.com/transforms-ui/1.x.x/transforms.css" />
   
     
-  <link rel="stylesheet" type="text/css" href="/assets/styles-c5060bc6e0a129931d51e534a87f199d6fad637d1b31dc224bb86f08df3696f4.css">
+  <link rel="stylesheet" type="text/css" href="/assets/styles-fd8d35b3569254a33651cdb900706d423788622245058cf615236f8a92d98a7b.css">
 </head>
 <body>
   <header class="siteHeader">
@@ -42,7 +42,7 @@
         <img alt="Filestack Logo" src="/assets/base/fs-logo-8ad73c5ae2b7a85eaac0378ce7b74a0f6240b45f317f169ae503127054e97be9.svg">
       </a>
     </div>
-    <div class="siteHeader__navigation">
+    <div class="siteHeader__navigation js-navPanel">
       <nav>
         <ul class="mainNav">
           <li class="mainNav__item">
@@ -79,11 +79,14 @@
         </ul>
       </nav>
     </div>
-    <div class="siteHeader__buttons">
+    <div class="siteHeader__buttons js-navPanel">
       <div class="buttonGroup">
         <a href="https://dev.filestack.com/signup/free" class="button button--primary button--small">Sign Up Free</a>
         <a href="#" class="button button--darkGhost button--small">Log In</a>
       </div>
+    </div>
+    <div class="siteHeader__mobileSwitch js-hamburger">
+      <button class="buttonHamburger"></button>
     </div>
   </div>
 </header>
@@ -119,7 +122,7 @@
         <li class="card card--normal card--hasNav">
           <div class="card__image">
             <div class="iconCircle">
-              IMG
+              <img alt="Icon Upload" src="/assets/base/icon-cloud-computing-3ec268b8d5c7380bed2d660f867d6022a7b7e6eb4e02f79deec5c3de835aa681.svg">
             </div>
           </div>
           <h4 class="card__title">Upload</h4>
@@ -133,7 +136,7 @@
         <li class="card card--normal">
           <div class="card__image">
             <div class="iconCircle">
-              IMG
+              <img alt="Icon Transform" src="/assets/base/icon-edit-tools-bf9ed4efacadda15b9b8bcb23527acdfbed4532ce2fdf48225ee280e1905a720.svg">
             </div>
           </div>
           <h4 class="card__title">Transform</h4>
@@ -147,7 +150,7 @@
         <li class="card card--normal">
           <div class="card__image">
             <div class="iconCircle">
-              IMG
+              <img alt="Icon Deliver" src="/assets/base/icon-cdn-763398f9342aa2a570acb0de1372f4a46bc0117563d50a8a7d355b5acaef41ad.svg">
             </div>
           </div>
           <h4 class="card__title">Deliver</h4>
@@ -326,7 +329,7 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
           <li class="card card--wide card--hasNav">
             <div class="card__image">
               <div class="iconCircle">
-                IMG
+                <img alt="Icon Document Conversion" src="/assets/base/icon-documents-0b7227e665a19228ce1979b535f51f8dc01fa3ce88d4c5ca6ed6b2ae89b2a5a7.svg">
               </div>
             </div>
             <h4 class="card__title">Document conversion for any file type</h4>
@@ -340,7 +343,7 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
           <li class="card card--wide card--hasNav">
             <div class="card__image">
               <div class="iconCircle">
-                IMG
+                <img alt="Icon Audio &amp;amp; Video Conversion" src="/assets/base/icon-play-c0879a7a27e4e47139f7afd37bf8606939131fdc8252f3a5aadaa23a4b7e6ac9.svg">
               </div>
             </div>
             <h4 class="card__title">Audio & Video Conversion</h4>
@@ -476,6 +479,53 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <aside class="ctaGlobal--small">
+  <div class="container">
+    <div class="u-grid u-grid--twoCols u-gridAlign--center u-gridGap--1">
+      <div>
+        
+        <p class="ctaGlobal__copy">Content Intelligence simplified with Filestack. Let us tell you how.</p>
+        
+      </div>
+      <div>
+        <div class="buttonGroup">
+          <a href="https://dev.filestack.com/signup/free" class="button button--bright">Sign Up Free</a>
+          <a href="/contact-form" class="button button--brightGhost">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+  <section class="band">
+    <div class="container">
+      <div class="u-textCenter">
+        <img alt="Filestack Workflows Logo" src="/assets/base/fs-workflows-logo-3436bebef757fbbc84bd845ce965b4f5049aca887232594abdad4955dd6f2e72.svg">
+      </div>
+      <div class="u-separateTop">
+        <div class="u-grid u-grid--twoColsRllr u-gridGap--3 u-gridAlign--center">
+          <div class="featureBox">
+            <h2 class="featureBox__title heading--2">Virus Detection delivered with Filestack Workflows</h2>
+            <div class="featureBox__body">
+              <p>Scan every file during upload to check for malicious content. Immediately quarantine any dangerous file so your app stays secure.</p>
+            </div>
+            <div class="featureBox__nav">
+              <a class="arrowLink" href="">Read documentation.</a>
+            </div>
+          </div>
+          <div class="featureMedia">
+            <img class="img" alt="Workflows" src="/assets/pages/homepage/workflow-graph_tvuz6b_c_scale,w_960-d9177b57a8fb4ff010305c100caaa941bb00145c5523d2d73386228e085f4a2b.png">
+          </div>
+        </div>
+      </div>
+      <div class="u-separateTop">
+        <div class="band--small u-textCenter u-narrowContent" style="max-width: 74rem;">
+          <h2 class="heading--2">Filestack is the only Secure File Handling Service for Developers</h2>
+          <p>In the age of GDPR and consumer security, Filestack is focused on creating a Secure File Handling Service built for developers.</p>
+        </div>
+      </div>
+      
     </div>
   </section>
 </main>
@@ -643,5 +693,13 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
   </div>
 </footer>
 
+<script>
+  const hamburger = document.querySelector('.js-hamburger');
+  const navPanel = document.querySelectorAll('.js-navPanel');
+  hamburger.addEventListener('click', () => {
+    hamburger.children[0].classList.toggle('animate');
+    navPanel.forEach((el) => el.classList.toggle('visible'));
+  });
+</script>
 </body>
 </html>

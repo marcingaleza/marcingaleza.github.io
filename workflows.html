@@ -13,7 +13,7 @@
   <!-- End of HubSpot Embed Code -->
   
     
-  <link rel="stylesheet" type="text/css" href="/assets/styles-c5060bc6e0a129931d51e534a87f199d6fad637d1b31dc224bb86f08df3696f4.css">
+  <link rel="stylesheet" type="text/css" href="/assets/styles-fd8d35b3569254a33651cdb900706d423788622245058cf615236f8a92d98a7b.css">
 </head>
 <body>
   <header class="siteHeader">
@@ -34,7 +34,7 @@
         <img alt="Filestack Logo" src="/assets/base/fs-logo-8ad73c5ae2b7a85eaac0378ce7b74a0f6240b45f317f169ae503127054e97be9.svg">
       </a>
     </div>
-    <div class="siteHeader__navigation">
+    <div class="siteHeader__navigation js-navPanel">
       <nav>
         <ul class="mainNav">
           <li class="mainNav__item">
@@ -71,11 +71,14 @@
         </ul>
       </nav>
     </div>
-    <div class="siteHeader__buttons">
+    <div class="siteHeader__buttons js-navPanel">
       <div class="buttonGroup">
         <a href="https://dev.filestack.com/signup/free" class="button button--primary button--small">Sign Up Free</a>
         <a href="#" class="button button--darkGhost button--small">Log In</a>
       </div>
+    </div>
+    <div class="siteHeader__mobileSwitch js-hamburger">
+      <button class="buttonHamburger"></button>
     </div>
   </div>
 </header>
@@ -219,5 +222,13 @@
   </div>
 </footer>
 
+<script>
+  const hamburger = document.querySelector('.js-hamburger');
+  const navPanel = document.querySelectorAll('.js-navPanel');
+  hamburger.addEventListener('click', () => {
+    hamburger.children[0].classList.toggle('animate');
+    navPanel.forEach((el) => el.classList.toggle('visible'));
+  });
+</script>
 </body>
 </html>

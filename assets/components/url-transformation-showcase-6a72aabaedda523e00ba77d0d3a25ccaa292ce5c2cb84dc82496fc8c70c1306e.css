@@ -1,0 +1,246 @@
+/* FS HIGHLIGHT ------------- */
+.urlTransformationShowcase {
+  padding: 8rem 0;
+  background: url(/assets/base/bgTrianglesBR-7b571f573efc9a55c2634dc6e29a3d16e7f8763add168f7cecc35b33c11f6178.svg) right bottom no-repeat, var(--darkGradient); }
+
+/* TEXT HIGHLIGHT ANIMATION */
+.fs-highlight {
+  position: relative;
+  display: inline-block; }
+
+.fs-highlight:nth-child(4) {
+  z-index: 2; }
+
+.fs-highlight:nth-child(3) {
+  z-index: 3; }
+
+.fs-highlight:nth-child(2) {
+  z-index: 4; }
+
+.fs-highlight:nth-child(2) span.marker::before {
+  height: 85px;
+  width: 2px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
+  left: 0;
+  transform-origin: 0 50%;
+  transition: height 1s ease-in-out; }
+
+.fs-highlight span.marker {
+  position: absolute;
+  height: 70px;
+  left: 0;
+  top: 0;
+  display: block;
+  content: '';
+  transform: skew(-17deg);
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-duration: 2.5s;
+  -moz-animation-duration: 2.5s;
+  -ms-animation-duration: 2.5s;
+  -o-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -o-animation-iteration-count: 1;
+  -webkit-transform-origin: 11% 0% 0%;
+  -moz-transform-origin: 11% 0% 0%;
+  -ms-transform-origin: 11% 0% 0%;
+  -o-transform-origin: 11% 0% 0%;
+  transform-origin: 11% 0% 0%; }
+
+.fs-highlight:nth-child(3) span.marker::after {
+  visibility: hidden;
+  transition: all 0.1s ease-in-out 3.5s; }
+
+.fs-highlight:nth-child(4) span.marker::after {
+  visibility: hidden;
+  transition: all 0.1s ease-in-out 5s; }
+
+.fs-highlight-api span.marker {
+  background-color: #ffd238; }
+
+.fs-highlight-transform span.marker {
+  background-color: #00a2ff; }
+
+.fs-highlight-file span.marker {
+  background-color: #c820ff; }
+
+.fs-highlight-api .fs-highlight-tooltip {
+  color: #ffd238; }
+
+.fs-highlight-transform .fs-highlight-tooltip {
+  color: #00a2ff; }
+
+.fs-highlight-file .fs-highlight-tooltip {
+  color: #c820ff; }
+
+.fs-highlight-api .fs-highlight-tooltip::before {
+  border-bottom-color: #ffd238; }
+
+.fs-highlight-transform .fs-highlight-tooltip::before {
+  border-bottom-color: #00a2ff; }
+
+.fs-highlight-file .fs-highlight-tooltip::before {
+  border-bottom-color: #c820ff; }
+
+.fs-highlight-tooltip::before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 6px;
+  margin-left: -6px; }
+
+.fs-highlight-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: -40px;
+  padding-top: 10px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(-50%, 100%);
+  -webkit-transform: translate(-50%, 100%);
+  letter-spacing: 0.5px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px; }
+
+.fs-highlight.animation-start .fs-highlight-tooltip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0); }
+
+.fs-highlight span.marker::after {
+  height: 85px;
+  width: 2px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 10;
+  transform-origin: 0 50%;
+  transition: height 1s ease-in-out; }
+
+.fs-highlight span.marker::after {
+  right: -1px; }
+
+.fs-highlight-animation {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  line-height: 70px;
+  font-family: 'Montserrat', sans-serif; }
+
+.fs-highlight-animation mark {
+  display: inline-block;
+  color: white; }
+
+mark.fs-text {
+  position: relative;
+  color: white;
+  display: block;
+  z-index: 2;
+  padding: 0;
+  background: transparent; }
+
+mark.fs-text:after {
+  content: '\00a0';
+  display: inline-block; }
+
+mark.fs-text:before {
+  content: '\00a0';
+  display: inline-block; }
+
+.fs-highlight.fs-hidden span.marker {
+  width: 0; }
+
+.fs-highlight:nth-child(2).fs-hidden span.marker::before,
+.fs-highlight:nth-child(2).fs-hidden span.marker::after {
+  height: 0px; }
+
+.fs-highlight:nth-child(2).animation-start span.marker::before,
+.fs-highlight:nth-child(2).animation-start span.marker::after {
+  height: 85px; }
+
+.fs-highlight:nth-child(3).animation-start span.marker::after,
+.fs-highlight:nth-child(4).animation-start span.marker::after {
+  visibility: visible; }
+
+.fs-highlight.animation-start span.marker {
+  animation: fs-highlight 2.5s 1 forwards;
+  -webkit-animation: fs-highlight 2.5s 1 forwards; }
+
+.fs-highlight.fs-highlight-api mark.fs-text {
+  transition: color 1s ease-in-out 1s; }
+
+.fs-highlight.fs-highlight-transform mark.fs-text {
+  transition: color 1s ease-in-out 2.5s; }
+
+.fs-highlight.fs-highlight-file mark.fs-text {
+  transition: color 1s ease-in-out 4.5s; }
+
+.fs-highlight.fs-highlight-api .fs-highlight-tooltip {
+  transition: all 1s ease-in-out 1.5s; }
+
+.fs-highlight.fs-highlight-transform .fs-highlight-tooltip {
+  transition: all 1s ease-in-out 3s; }
+
+.fs-highlight.fs-highlight-file .fs-highlight-tooltip {
+  transition: all 1s ease-in-out 5s; }
+
+.fs-highlight.fs-highlight-api span.marker {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.fs-highlight.fs-highlight-transform span.marker {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s; }
+
+.fs-highlight.fs-highlight-file span.marker {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s; }
+
+.fs-highlight.animation-start mark.fs-text {
+  color: black; }
+
+.fs-highlight-tooltip {
+  position: absolute; }
+
+@keyframes fs-highlight {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
