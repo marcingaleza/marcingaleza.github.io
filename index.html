@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="https://static.filestackapi.com/transforms-ui/1.x.x/transforms.css" />
   
     
-  <link rel="stylesheet" type="text/css" href="/assets/styles-fd8d35b3569254a33651cdb900706d423788622245058cf615236f8a92d98a7b.css">
+  <link rel="stylesheet" type="text/css" href="/assets/styles-83fe36cd9f78436cfb616e8624ca42f91859dfd84ba97841085054b29d6996c4.css">
 </head>
 <body>
   <header class="siteHeader">
@@ -95,7 +95,7 @@
     <p class="u-textCenter">Give your customers the power to transform images before they’re uploaded into your application with the new Filestack Transformations UI. Read more.</p>
   </div>
 </aside>
-  <main>
+  <main class="picker-demo">
   <section class="hero">
     <div class="container">
       <div class="heroContent">
@@ -185,7 +185,7 @@
             <a class="arrowLink" href="">Check out full picker documentation</a>
           </div>
         </div>
-        <div class="featureMedia">PICKER</div>
+        <div class="featureMedia picker-demo"><main-picker></main-picker></div>
         <div class="featureBox">
           <h3 class="featureBox__title heading--2">SDKs for quick integration</h3>
           <div class="featureBox__body">
@@ -289,8 +289,8 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
         <h2 class="heading--2">Powerful image transformation for you and your customers</h2>
         <p>Give your customers the power to manipulate their images, before they they upload. Easily transform, convert and optimize images or apply beautiful effects and filters to any image.</p>
       </div>
-      <div class="band--small">
-        TRANSFORMATION UI DEMO
+      <div class="band--small trui-demo">
+        <div id="trui-demo"></div>
       </div>
     </div>
     <div class="band--small u-backgroundGray--1 u-textCenter u-separateTop">
@@ -595,31 +595,39 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
 
 	sdkNavigation.forEach((el) => el.addEventListener('click', switchSdk));
 </script>
+
   <footer class="siteFooter">
   <div class="container">
     <aside class="siteFooter__cta">
       <div class="u-grid u-grid--twoCols u-gridAlign--center u-gridGap--1">
         <div>
-          <h3 class="siteFooter__ctaTitle heading--3">Join the 100,000+ Applications Using Filestack</h3>
-          <p>Getting started is fast, free, and easy. Improve your file upload performance today. Sign up now for free or click the 'talk to us' button. We are always here to help.</p>
+          <h3 class="siteFooter__ctaTitle heading--3">
+            Join the 100,000+ Applications Using Filestack
+          </h3>
+          <p>
+            Getting started is fast, free, and easy. Improve your file upload
+            performance today. Sign up now for free or click the 'talk to us'
+            button. We are always here to help.
+          </p>
         </div>
         <div>
           <div class="buttonGroup">
-            <a href="https://dev.filestack.com/signup/free" class="button button--bright">Sign Up Free</a>
-            <a href="/contact-form" class="button button--brightGhost">Contact Us</a>
+            <a href="https://dev.filestack.com/signup/free" class="button button--bright"
+              >Sign Up Free</a
+            >
+            <a
+              href="/contact-form"
+              class="button button--brightGhost"
+              >Contact Us</a
+            >
           </div>
         </div>
       </div>
       <div class="siteFooter__clients">
-         <img alt="Sendgrid Logo" src="/assets/base/logo-white_sendgrid-38a3cee307ba3132faaa32fdbf443ecdeb26ed6b5b3ce274035f77d226ef818c.svg">
-         <img alt="Sendgrid Logo" src="/assets/base/logo-white_zenefits-086b23086f951a21abc1155b55ef2cb03b0249235d6e9cc63ce9cf80433a2086.svg">
-         <img alt="Sendgrid Logo" src="/assets/base/logo-white_teachable-2c727385034f798514d2dbaa066a99c141ceb6cc1f4bab82b0195c17849dea9a.svg">
-         <img alt="Sendgrid Logo" src="/assets/base/logo-white_ted-f7cccf4ca199bcc43e5c77f27cdb315e401a409b1e4a3ca8051aecbbd62fd60b.svg">
-         <img alt="Sendgrid Logo" src="/assets/base/logo-white_coca_cola-006fee4433874fab0f463d1086ec71c8b2ecf857a396a8b1c07975cd883b3722.svg">
-         <img alt="Sendgrid Logo" src="/assets/base/logo-white_monster-40252fa3ae3c849b129572e8333ccd1e633f9c1ff92bbdbae482ebc808e68888.svg">
+        <img alt="Sendgrid Logo" src="/assets/base/logo-white_sendgrid-38a3cee307ba3132faaa32fdbf443ecdeb26ed6b5b3ce274035f77d226ef818c.svg"> <img alt="Sendgrid Logo" src="/assets/base/logo-white_zenefits-086b23086f951a21abc1155b55ef2cb03b0249235d6e9cc63ce9cf80433a2086.svg"> <img alt="Sendgrid Logo" src="/assets/base/logo-white_teachable-2c727385034f798514d2dbaa066a99c141ceb6cc1f4bab82b0195c17849dea9a.svg"> <img alt="Sendgrid Logo" src="/assets/base/logo-white_ted-f7cccf4ca199bcc43e5c77f27cdb315e401a409b1e4a3ca8051aecbbd62fd60b.svg"> <img alt="Sendgrid Logo" src="/assets/base/logo-white_coca_cola-006fee4433874fab0f463d1086ec71c8b2ecf857a396a8b1c07975cd883b3722.svg"> <img alt="Sendgrid Logo" src="/assets/base/logo-white_monster-40252fa3ae3c849b129572e8333ccd1e633f9c1ff92bbdbae482ebc808e68888.svg">
       </div>
     </aside>
-    <hr>
+    <hr />
     <nav class="siteFooter__navigation">
       <div>
         <h4 class="siteFooter__listTitle heading--4">Company</h4>
@@ -648,7 +656,9 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
             <a href="" class="siteFooter__link">File Transformations</a>
           </li>
           <li class="siteFooter__item">
-            <a href="" class="siteFooter__link">Audio and Video Transformations</a>
+            <a href="" class="siteFooter__link"
+              >Audio and Video Transformations</a
+            >
           </li>
           <li class="siteFooter__item">
             <a href="" class="siteFooter__link">Deliver</a>
@@ -694,12 +704,381 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
 </footer>
 
 <script>
-  const hamburger = document.querySelector('.js-hamburger');
-  const navPanel = document.querySelectorAll('.js-navPanel');
-  hamburger.addEventListener('click', () => {
-    hamburger.children[0].classList.toggle('animate');
-    navPanel.forEach((el) => el.classList.toggle('visible'));
+  const hamburger = document.querySelector(".js-hamburger");
+  const navPanel = document.querySelectorAll(".js-navPanel");
+  hamburger.addEventListener("click", () => {
+    hamburger.children[0].classList.toggle("animate");
+    navPanel.forEach((el) => el.classList.toggle("visible"));
   });
 </script>
+
+
+<script>
+  document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+      if (
+        document.body.contains(document.querySelector(".fs-canvas-container"))
+      ) {
+        return true;
+      }
+      const tr = new FilestackTransform("AGGzy5zr9RNKuVEmf55MDz", {
+        client: {
+          security: {
+            policy: "eyJleHBpcnkiOjE4Njk0Mjk2MDB9",
+            signature:
+              "df0b2f435cc92c05558b54215b104eabd953bffb85c02e5d1f83405fb09a3a90",
+          },
+        },
+      });
+      tr.setContainer("#trui-demo", "inline");
+      tr.open(
+        "https://cdn.filestackcontent.com/enhance=preset:outdoor/security=p:eyJjYWxsIjogWyJjb252ZXJ0IiwgInJlYWQiXSwgImV4cGlyeSI6IDE4ODEyNTc3MDksICJoYW5kbGUiOiAiWG9UTjdUTXdRN0sxYWl6Q0pBOWQifQ==,s:441284b4ac5e390bf269a48b51fd740a5515cf9c6290a91e51f2821bfb1a6c61/XoTN7TMwQ7K1aizCJA9d"
+      ).then((res) => {
+        // replace FILE_URL with the link to the image
+      });
+    },
+    false
+  );
+</script>
+ 
+<script>
+  Vue.use(Vuex);
+
+  const TYPE_IMAGE = "img";
+  const TYPE_AV = "av";
+  const TYPE_DOC = "doc";
+  const TYPE_PDF = "pdf";
+  const TYPE_OTHER = "other";
+
+  const DOCUMENT_TYPES = [
+    "text/rtf",
+    "text/richtext",
+    "application/rtf",
+    "application/x-rtf",
+    "application/msword",
+    "application/vnd.ms-word.document.macroenabled.12",
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    "application/vnd.ms-excel",
+    "application/vnd.ms-excel.sheet.macroenabled.12",
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+    "application/vnd.ms-powerpoint",
+    "application/vnd.ms-powerpoint.presentation.macroenabled.12",
+    "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    "application/vnd.oasis.opendocument.text",
+    "application/vnd.oasis.opendocument.spreadsheet",
+    "application/vnd.oasis.opendocument.presentation",
+    "application/x-iwork-pages-sffpages",
+    "application/x-iwork-keynote-sffkey",
+    "application/x-iwork-numbers-sffnumbers",
+    "text/html",
+    "text/plain",
+  ];
+
+  let pickerCounter = 0;
+
+  const IMAGE_TYPES = [
+    "application/illustrator",
+    "application/postscript",
+    "application/photoshop",
+    "application/psd",
+    "application/x-photoshop",
+  ];
+
+  const detectType = (mime) => {
+    if (mime.indexOf("image/") > -1 || IMAGE_TYPES.indexOf(mime) > -1) {
+      return TYPE_IMAGE;
+    }
+
+    if (mime.indexOf("audio/") > -1 || mime.indexOf("video/") > -1) {
+      return TYPE_AV;
+    }
+
+    if (mime.indexOf("pdf") > -1) {
+      return TYPE_PDF;
+    }
+
+    if (DOCUMENT_TYPES.indexOf(mime) > -1) {
+      return TYPE_PDF;
+    }
+  };
+
+  const store = new Vuex.Store({
+    state: {
+      imageFile: null,
+      documentFile: null,
+      avFile: null,
+      pdfFile: null,
+    },
+    getters: {
+      imageFile: (state) => state.imageFile,
+      documentFile: (state) => state.documentFile,
+      avFile: (state) => state.avFile,
+      tagsFile: (state) => state.tagsFile,
+    },
+    mutations: {
+      SET_MAIN_FILE: (state, file) => {
+        const type = detectType(file.mimetype);
+        switch (type) {
+          case TYPE_IMAGE:
+            Vue.set(state, "imageFile", file.handle);
+            break;
+          case TYPE_AV:
+            Vue.set(state, "avFile", file.handle);
+            break;
+
+          case TYPE_DOC:
+          case TYPE_PDF:
+            Vue.set(state, "documentFile", file.handle);
+            break;
+        }
+      },
+    },
+  });
+
+  const Picker = {
+    template: `<div :id="randId"></div>`,
+    props: {
+      mode: String,
+      accept: Array,
+      sources: Array,
+    },
+    data: () => {
+      return {
+        randId: null,
+      };
+    },
+    computed: {},
+    created() {
+      this.randId = this.rand() + pickerCounter;
+      pickerCounter++;
+
+      let options = {
+        container: this.randId,
+        rootId: this.rand(),
+        uploadInBackground: false,
+        displayMode: this.mode || "inline",
+        maxFiles: 1,
+        onFileUploadFinished: (file) => this.$emit("done", file),
+        onFileUploadProgress: (progress) => this.$emit("progress", progress),
+        onFileUploadFailed: (file) => this.$emit("error", file),
+      };
+
+      if (this.sources && this.sources.length) {
+        options.fromSources = this.sources;
+      }
+
+      this.accept = DOCUMENT_TYPES.concat(IMAGE_TYPES),
+
+      options.storeTo = {
+        container: "devportal-customers-assets",
+        path: "user-uploads/",
+        region: "us-east-1",
+      };
+
+      this.picker = this.$root.client.picker(options);
+    },
+    mounted() {
+      if (this.mode !== "overlay") {
+        this.picker.open();
+      }
+    },
+    methods: {
+      open() {
+        console.log("open");
+        // this.picker.open();
+      },
+      rand: () => {
+        const min = 1;
+        const max = 100;
+        return `picker-${Math.round(Math.random() * (max - min) + min)}`;
+      },
+    },
+  };
+
+  const ImagePreview = {
+    template: `<img :src="imgSrc" v-if="imgSrc"/>`,
+    data: () => {
+      return {
+        imgSrc: null,
+      };
+    },
+    computed: {
+      ...Vuex.mapGetters(["imageFile"]),
+      handle() {
+        return this.$store.getters.imageFile;
+      },
+    },
+    mounted() {
+      if (this.handle) {
+        const fl = new filestack.Filelink(this.handle, this.$root.apikey);
+        if (this.$root.security) {
+          fl.security(this.$root.security);
+        }
+
+        this.imgSrc = fl;
+      }
+    },
+    methods: {
+      generate() {
+        if (!this.handle) {
+          return;
+        }
+
+        var fl = new filestack.Filelink(this.handle, this.$root.apikey);
+
+        if (this.$root.security) {
+          fl.security(this.$root.security);
+        }
+
+        this.imgSrc = fl.toString();
+      },
+    },
+    watch: {
+      imageFile() {
+        console.log("handle watch");
+        this.generate();
+      },
+    },
+  };
+
+  const AvPreview = {
+    template: `<video v-if="videoSrc" width="320" height="240" controls>
+        <source :src="videoSrc">
+        Your browser does not support the video tag.
+      </video>`,
+    data: () => {
+      return {
+        pendingTimeout: false,
+        videoSrc: null,
+        isLoading: false,
+      };
+    },
+    computed: {
+      handle() {
+        return this.$store.getters.avFile;
+      },
+    },
+    mounted() {
+      if (this.handle) {
+        const fl = new filestack.Filelink(this.handle, this.$root.apikey);
+        if (this.$root.security) {
+          fl.security(this.$root.security);
+        }
+
+        this.videoSrc = fl;
+      }
+    },
+    methods: {
+      combineFile() {
+        if (!this.handle) {
+          return;
+        }
+
+        var fl = new filestack.Filelink(this.handle, this.$root.apikey);
+        if (this.$root.security) {
+          fl.security(this.$root.security);
+        }
+
+        this.$nextTick(() => {
+          this.videoSrc = fl;
+        });
+      },
+    },
+    watch: {
+      handle() {
+        this.combineFile();
+      },
+    },
+  };
+
+  const DocumentPreview = {
+    template: `<div v-if="handle" id="docPreview" class="sc-preview-wrapper"></>`,
+    computed: {
+      handle() {
+        return this.$store.getters.documentFile;
+      },
+    },
+    mounted() {
+      this.generate();
+    },
+    methods: {
+      generate() {
+        if (!this.handle) {
+          return;
+        }
+
+        this.$nextTick(() => {
+          this.$root.client.preview(this.handle, { id: "docPreview" });
+        });
+      },
+    },
+    watch: {
+      handle() {
+        this.generate();
+      },
+    },
+  };
+
+  const MainPicker = {
+    components: {
+      Picker,
+      ImagePreview,
+      DocumentPreview,
+      AvPreview,
+    },
+    data() {
+      return {
+        result: null,
+      };
+    },
+    template: `
+    <div>
+      <picker v-if="!result" @done="onFileUploaded" @error="onFileError"></picker>
+      <image-preview></image-preview>
+      <document-preview></document-preview>
+      <av-preview></av-preview>
+    </div>`,
+    computed: {},
+    methods: {
+      onFileUploaded(file) {
+        this.$store.commit("SET_MAIN_FILE", file);
+        this.result = file;
+      },
+      onFileError(file) {
+        console.log("File error", file);
+      },
+      reset() {
+        this.result = null;
+      },
+    },
+  };
+
+  Vue.config.productionTip = false;
+  var app = new Vue({
+    el: ".picker-demo",
+    store,
+    components: { MainPicker },
+    created() {
+      const security = {
+        policy: "eyJleHBpcnkiOjE2NTM5NDgwMDB9",
+        signature:
+          "08aafeb16f44bba501b0ddd33d6932fdd523af5bdf62a163b78f0a7e5eb54be7",
+      };
+
+      this.apikey = "ARVNFDkIFTCy2nOXvYSoLz";
+      this.client = filestack.init(this.apikey, {
+        security,
+      });
+
+      this.security = security;
+    },
+    data: {
+      client: null,
+    },
+  });
+</script>
+
+
 </body>
 </html>

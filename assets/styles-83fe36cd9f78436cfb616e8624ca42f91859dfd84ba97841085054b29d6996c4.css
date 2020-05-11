@@ -1086,3 +1086,10 @@ mark.fs-text:before {
     width: 0; }
   100% {
     width: 100%; } }
+.trui-demo {
+  height: 800px; }
+  .trui-demo .fs-main .fs-inline {
+    min-width: 100% !important; }
+
+.picker-demo .fsp-picker--inline {
+  height: 400px; }
