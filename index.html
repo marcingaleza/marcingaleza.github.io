@@ -378,19 +378,19 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
             <div class="deliveryTabs">
   
   <div id="deliver-to-desktop" class="deliveryTabs__device js-deliveryDevice -active">
-    <img class="img" alt="Desktop" src="/assets/pages/homepage/device-desktop-a408454358c3502526f10ddaf5261e81b88be5727996da06692e7d3cdcc633c1.png">
+    <img class="img" alt="Desktop" src="/assets/pages/homepage/device-desktop-e7e0859e403ac95a2cf401da0da0b74a1e1bf2145e2b0ab281656456192ef738.png">
   </div>
   <div id="deliver-to-laptop" class="deliveryTabs__device js-deliveryDevice">
-    <img class="img" alt="Laptop" src="/assets/pages/homepage/device-laptop-caaccf37e0411e8d0918638330d59e9996e2c8629eca0be56336ae5f1aea14ee.png">
+    <img class="img" alt="Laptop" src="/assets/pages/homepage/device-laptop-fefb76b1536c0fa3f79f66343245c01325e81cc633aa8879e06e873af6cb90f8.png">
   </div>
   <div id="deliver-to-tablet" class="deliveryTabs__device js-deliveryDevice">
-    <img class="img" alt="Tablet" src="/assets/pages/homepage/device-tablet-4f13f3140ffaab100cf0366af85fbab533ab2dfa5f94c8348bda26cffde9eee7.png">
+    <img class="img" alt="Tablet" src="/assets/pages/homepage/device-tablet-44e658cc1fd95a411a62c13a45817aaab248288b37cae49428c65b16c0bfaaec.png">
   </div>
   <div id="deliver-to-mobile" class="deliveryTabs__device js-deliveryDevice">
-    <img class="img" alt="Mobile" src="/assets/pages/homepage/device-mobile-2fe0f63e9b25745fb6cec66e68b534b32204ba1371caa00d7535a0a403f65307.png">
+    <img class="img" alt="Mobile" src="/assets/pages/homepage/device-mobile-af4e6c53f2581b1c81ea28da7e16db713161c85f13fdb4f50a7b47e1fcb36301.png">
   </div>
   <div id="deliver-to-watch" class="deliveryTabs__device js-deliveryDevice">
-    <img class="img" alt="Watch" src="/assets/pages/homepage/device-watch-40238dd8b4e6a86e3fc733ae0f4e74bf1ba18f3dc2fa664c47f562851e72707b.png">
+    <img class="img" alt="Watch" src="/assets/pages/homepage/device-watch-36162e498968492aca28253c93c72a15f390c496a9ee1438c351a2abc7ac19f6.png">
   </div>
 
   <ul class="deliveryTabs__nav">
@@ -530,71 +530,7 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
   </section>
 </main>
 
-<script>
-  const deliveryNavigation = document.querySelectorAll('.js-deliverySwitch');
-	const deliveryContent = document.querySelectorAll('.js-deliveryDevice');
 
-	const switchDelivery = (ev) => {
-		deliveryNavigation.forEach((el) => el.classList.remove('-active'));
-		let clickedTab = ev.currentTarget;
-		clickedTab.classList.add('-active');
-		ev.preventDefault();
-
-		deliveryContent.forEach((el) => el.classList.remove('-active'));
-		let contentAnchor = ev.currentTarget.getAttribute('href');
-		let activeContent = document.querySelector(contentAnchor);
-		activeContent.classList.add('-active');
-	}
-
-	deliveryNavigation.forEach((el) => el.addEventListener('click', switchDelivery));
-
-  if(document.getElementsByClassName('fs-animate')){
-  var animateHTML = function () {
-    var elems,
-      windowHeight
-    var init = function () {
-      elems = document.getElementsByClassName('fs-animate')
-      windowHeight = window.innerHeight
-      _addEventHandlers()
-      _checkPosition()
-    }
-    var _addEventHandlers = function () {
-      window.addEventListener('scroll', _checkPosition)
-      window.addEventListener('resize', init)
-    }
-    var _checkPosition = function () {
-      for (var i = 0; i < elems.length; i++) {
-        var posFromTop = elems[i].getBoundingClientRect().top
-        if (posFromTop - windowHeight <= 0) {
-          elems[i].className = elems[i].className.replace('fs-hidden', 'animation-start')
-          elems[i].className = elems[i].className.replace('hidden', 'animation-start')
-        }
-      }
-    }
-    return {
-      init: init
-    }
-  }
-  animateHTML().init();
-  }
-
-  const sdkNavigation = document.querySelectorAll('.js-sdkSwitch');
-	const sdkContent = document.querySelectorAll('.js-sdkCode');
-
-	const switchSdk = (ev) => {
-		sdkNavigation.forEach((el) => el.classList.remove('-active'));
-		let clickedTab = ev.currentTarget;
-		clickedTab.classList.add('-active');
-		ev.preventDefault();
-
-		sdkContent.forEach((el) => el.classList.remove('-active'));
-		let contentAnchor = ev.currentTarget.getAttribute('href');
-		let activeContent = document.querySelector(contentAnchor);
-		activeContent.classList.add('-active');
-	}
-
-	sdkNavigation.forEach((el) => el.addEventListener('click', switchSdk));
-</script>
 
   <footer class="siteFooter">
   <div class="container">
@@ -711,6 +647,8 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
     navPanel.forEach((el) => el.classList.toggle("visible"));
   });
 </script>
+
+
 
 
 <script>
@@ -1080,5 +1018,70 @@ client.upload(filepath=<span class="green">"path/to/file"</span>,
 </script>
 
 
+<script>
+  const deliveryNavigation = document.querySelectorAll('.js-deliverySwitch');
+	const deliveryContent = document.querySelectorAll('.js-deliveryDevice');
+
+	const switchDelivery = (ev) => {
+		deliveryNavigation.forEach((el) => el.classList.remove('-active'));
+		let clickedTab = ev.currentTarget;
+		clickedTab.classList.add('-active');
+		ev.preventDefault();
+
+		deliveryContent.forEach((el) => el.classList.remove('-active'));
+		let contentAnchor = ev.currentTarget.getAttribute('href');
+		let activeContent = document.querySelector(contentAnchor);
+		activeContent.classList.add('-active');
+	}
+
+	deliveryNavigation.forEach((el) => el.addEventListener('click', switchDelivery));
+
+  if(document.getElementsByClassName('fs-animate')){
+  var animateHTML = function () {
+    var elems,
+      windowHeight
+    var init = function () {
+      elems = document.getElementsByClassName('fs-animate')
+      windowHeight = window.innerHeight
+      _addEventHandlers()
+      _checkPosition()
+    }
+    var _addEventHandlers = function () {
+      window.addEventListener('scroll', _checkPosition)
+      window.addEventListener('resize', init)
+    }
+    var _checkPosition = function () {
+      for (var i = 0; i < elems.length; i++) {
+        var posFromTop = elems[i].getBoundingClientRect().top
+        if (posFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace('fs-hidden', 'animation-start')
+          elems[i].className = elems[i].className.replace('hidden', 'animation-start')
+        }
+      }
+    }
+    return {
+      init: init
+    }
+  }
+  animateHTML().init();
+  }
+
+  const sdkNavigation = document.querySelectorAll('.js-sdkSwitch');
+	const sdkContent = document.querySelectorAll('.js-sdkCode');
+
+	const switchSdk = (ev) => {
+		sdkNavigation.forEach((el) => el.classList.remove('-active'));
+		let clickedTab = ev.currentTarget;
+		clickedTab.classList.add('-active');
+		ev.preventDefault();
+
+		sdkContent.forEach((el) => el.classList.remove('-active'));
+		let contentAnchor = ev.currentTarget.getAttribute('href');
+		let activeContent = document.querySelector(contentAnchor);
+		activeContent.classList.add('-active');
+	}
+
+	sdkNavigation.forEach((el) => el.addEventListener('click', switchSdk));
+</script>
 </body>
 </html>

@@ -224,7 +224,74 @@
   });
 </script>
 
+
+
  
 
+<script>
+  const deliveryNavigation = document.querySelectorAll('.js-deliverySwitch');
+	const deliveryContent = document.querySelectorAll('.js-deliveryDevice');
+
+	const switchDelivery = (ev) => {
+		deliveryNavigation.forEach((el) => el.classList.remove('-active'));
+		let clickedTab = ev.currentTarget;
+		clickedTab.classList.add('-active');
+		ev.preventDefault();
+
+		deliveryContent.forEach((el) => el.classList.remove('-active'));
+		let contentAnchor = ev.currentTarget.getAttribute('href');
+		let activeContent = document.querySelector(contentAnchor);
+		activeContent.classList.add('-active');
+	}
+
+	deliveryNavigation.forEach((el) => el.addEventListener('click', switchDelivery));
+
+  if(document.getElementsByClassName('fs-animate')){
+  var animateHTML = function () {
+    var elems,
+      windowHeight
+    var init = function () {
+      elems = document.getElementsByClassName('fs-animate')
+      windowHeight = window.innerHeight
+      _addEventHandlers()
+      _checkPosition()
+    }
+    var _addEventHandlers = function () {
+      window.addEventListener('scroll', _checkPosition)
+      window.addEventListener('resize', init)
+    }
+    var _checkPosition = function () {
+      for (var i = 0; i < elems.length; i++) {
+        var posFromTop = elems[i].getBoundingClientRect().top
+        if (posFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace('fs-hidden', 'animation-start')
+          elems[i].className = elems[i].className.replace('hidden', 'animation-start')
+        }
+      }
+    }
+    return {
+      init: init
+    }
+  }
+  animateHTML().init();
+  }
+
+  const sdkNavigation = document.querySelectorAll('.js-sdkSwitch');
+	const sdkContent = document.querySelectorAll('.js-sdkCode');
+
+	const switchSdk = (ev) => {
+		sdkNavigation.forEach((el) => el.classList.remove('-active'));
+		let clickedTab = ev.currentTarget;
+		clickedTab.classList.add('-active');
+		ev.preventDefault();
+
+		sdkContent.forEach((el) => el.classList.remove('-active'));
+		let contentAnchor = ev.currentTarget.getAttribute('href');
+		let activeContent = document.querySelector(contentAnchor);
+		activeContent.classList.add('-active');
+	}
+
+	sdkNavigation.forEach((el) => el.addEventListener('click', switchSdk));
+</script>
 </body>
 </html>
