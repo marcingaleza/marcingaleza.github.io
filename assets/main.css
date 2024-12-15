@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap'); */
 @import "reset.css";
+@import "a11y.css";
 
 
 :root {
@@ -14,20 +14,41 @@
 
   --serif-font-family: "Quicksand", sans-serif;
 
+  --focus-outline-width: 3px;
+  --focus-outline-style: solid;
+  --focus-outline-color: rgba(0, 122, 255, 0.5);
+  --focus-outline-offset: 1px;
 }
 
 body {
   background-color: var(--body-background, #fff);
   color: var(--dark-color);
 
-  margin: 0;
+  font-family: var(--serif-font-family, sans-serif);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hero {
+  --hero-gap: 4rem;
+
   background: var(--bright-color, #fff);
 
-  padding-inline: clamp(0.25rem, 2rem, 2rem);
+  padding-inline: 2rem;
   padding-block: 5rem 3rem;
+}
+
+.hero__grid {
+  display: grid;
+  gap: calc(var(--hero-gap) / 2);
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 60em) {
+  .hero__grid {
+    gap: var(--hero-gap);
+  }
 }
 
 .brand-name {
@@ -50,7 +71,7 @@ body {
   padding-block: 0.25rem;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 32em) {
   .brand-name {
     font-size: 5rem;
   }
@@ -67,9 +88,85 @@ body {
 }
 
 .ribbon {
-  border-bottom: 1px solid #ccc;
+  border: 0;
+  border-bottom: 1px solid var(--dark-color);
 
   height: 0;
-  border: 0;
   margin-block: 2rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+.button {
+  --button-padding: 0.7em 1.2em;
+  --button-gap: 0.5em;
+  --button-bg: transparent;
+  --button-color: var(--dark-color);
+  --button-hover-bg: var(--dark-color);
+  --button-hover-color: var(--bright-color);
+  --button-border-width: 2px;
+  --button-border-style: solid;
+  --button-border-color: var(--dark-color);
+  --button-radius: 0;
+  --button-icon-size: 2.2cap;
+  --button-outline-width: var(--focus-outline-width);
+  --button-outline-style: var(--focus-outline-style);
+  --button-outline-color: var(--focus-outline-color);
+  --button-outline-offset: var(--focus-outline-offset);
+
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--button-gap);
+  padding: var(--button-padding);
+
+  background: var(--button-bg);
+  color: var(--button-color);
+
+  border-width: var(--button-border-width);
+  border-style: var(--button-border-style);
+  border-color: var(--button-border-color);
+  border-radius: var(--button-radius);
+
+  text-decoration: none;
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 1em);
+  letter-spacing: 0.05ch;
+  font-family: var(--serif-font-family, sans-serif);
+  line-height: 1.1;
+
+  cursor: pointer;
+}
+
+.button svg {
+  height: var(--button-icon-size, 1.2cap);
+  width: auto;
+  flex: none;
+}
+
+.button:hover {
+  background: var(--button-hover-bg);
+  color: var(--button-hover-color);
+}
+
+.button:focus-visible {
+  outline-width: var(--button-outline-width, var(--button-border-width));
+  outline-style: var(--button-outline-style, var(--button-border-style));
+  outline-color: var(--button-outline-color, var(--button-border-color));
+  outline-offset: var(--button-outline-offset, calc(var(--button-border-width) * 2));
+}
+
+.button:active {
+  transform: scale(99%);
+}
+
+.button.primary {
+  --button-bg: #007aff;
+  --button-color: var(--bright-color);
+  --button-hover-bg: var(--dark-color);
+  --button-hover-color: var(--bright-color);
+  --button-border-color: var(--button-bg);
 }

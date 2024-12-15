@@ -25,6 +25,12 @@ ul[role='list'],
 ol[role='list'] {
   list-style: none;
 }
+[role=list][class],
+[role=tablist] {
+    list-style: none;
+    margin-block: 0;
+    padding: 0;
+}
 
 /* Set core body defaults */
 body {
