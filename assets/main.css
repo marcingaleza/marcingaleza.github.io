@@ -1,0 +1,50 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap'); */
+@import "reset.css";
+
+
+:root {
+  --body-background: #CED6DE;
+  --accent-color: #F2B516;
+  --bright-color: #fff;
+
+  --brand-font-family: "PT Serif", serif;
+  --brand-font-weight: 700;
+  --brand-font-style: normal;
+
+  --serif-font-family: "Quicksand", sans-serif;
+
+}
+
+body {
+  background-color: var(--body-background, #fff);
+
+  margin: 0;
+}
+
+.hero {
+  background: var(--bright-color, #fff);
+
+  padding-inline: 2rem;
+  padding-block: 5rem 3rem;
+}
+
+.brand-name {
+  font-family: var(--brand-font-family, serif);
+  font-size: 5rem;
+  font-weight: var(--brand-font-weight);
+}
+
+.brand-tag {
+  font-family: var(--serif-font-family, sans-serif);
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+
+  background-color: var(--accent-color);
+  color: var(--bright-color);
+  border-radius: 9999px;
+  
+  display: inline-flex;
+  padding-inline: 0.75rem;
+  padding-block: 0.25rem;
+}
