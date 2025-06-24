@@ -6,9 +6,16 @@
   --color-accent: #F2B516;
   --color-light: #F6F6F3;
   --color-dark: #212529;
+  --color-gray-200: #D2D2D2;
+  --color-blue-500: #007AFF;
+  --color-purple-500: #6A00FF;
+
+  --color-border: var(--color-gray-200);
+  --color-link: var(--color-blue-500);
+  --color-link-visited: var(--color-purple-500);
 
   --font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-serif: Georgia, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --font-serif: "Noto Serif", Georgia, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 
   
   --focus-outline-width: 4px;
@@ -38,10 +45,10 @@
   --border-thick: var(--s-2);
   
   line-height: var(--ratio);
-  font-size: calc(.333vw + 1em);
+  font-size: calc(.133vw + 1em);
   font-family: var(--font-serif);
   background-color: var(--color-light);
-  color: var(--color-dark)
+  color: var(--color-dark);
 }
 
 *,:after,:before {
@@ -59,7 +66,7 @@
 
 :focus {
   outline: var(--border-thin) solid var(--color-mid);
-  outline-offset: var(--border-thin)
+  outline-offset: var(--border-thin);
 }
 
 .vh {
@@ -69,7 +76,7 @@
   overflow: hidden!important;
   position: absolute!important;
   white-space: nowrap!important;
-  width: 1px!important
+  width: 1px!important;
 }
 
 body {
@@ -80,17 +87,29 @@ main > * {
   display: block;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  max-width: 35rem;
+  max-width: 45rem;
 }
 
 main > * + * {
   margin-block-start: 1em;
 }
 
-.page-logo {
-  max-width: 45rem;
+main > h2 {
+  margin-block-start: var(--s4);
 }
 
-.page-logo > svg {
-  width: 100%;
+a {
+  color: var(--color-link);
+}
+a:visited {
+  color: var(--color-link-visited);
+}
+ul.list {
+  padding-left: var(--s2);
+}
+
+.heading {
+  padding-bottom: var(--s2);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--s2);
 }
