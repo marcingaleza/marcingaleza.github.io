@@ -66,7 +66,7 @@
   text-wrap: pretty;
 }
 
-:focus {
+:focus-visible {
   outline: var(--border-thin) solid var(--color-blue-500);
   outline-offset: var(--border-thin);
 }
@@ -106,19 +106,19 @@ main > * + * {
 }
 
 .case-studies {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--s2);
   margin-block-start: var(--s4);
+  margin-block-end: var(--s2);
   list-style: none;
 }
 
 .case-studies a {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   width: 100%;
-  max-width: 23.75rem;
   min-height: 10rem;
   background-color: var(--color-gray-200);
   padding: var(--s1);
