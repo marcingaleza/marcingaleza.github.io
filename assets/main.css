@@ -47,6 +47,7 @@
   line-height: var(--ratio);
   font-size: calc(.333vw + 1em);
   font-family: var(--font-sans-serif);
+  font-weight: 300;
   background-color: var(--color-light);
   color: var(--color-dark);
 }
@@ -89,6 +90,10 @@ main > * {
   margin-inline-start: auto;
   margin-inline-end: auto;
   max-width: 50rem;
+}
+
+main strong {
+  font-weight: 700;
 }
 
 main > * + * {
