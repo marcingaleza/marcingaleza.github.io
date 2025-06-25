@@ -14,7 +14,7 @@
   --color-link: var(--color-blue-500);
   --color-link-visited: var(--color-purple-500);
 
-  --font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --font-serif: "Noto Serif", Georgia, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 
   
@@ -45,8 +45,8 @@
   --border-thick: var(--s-2);
   
   line-height: var(--ratio);
-  font-size: calc(.133vw + 1em);
-  font-family: var(--font-serif);
+  font-size: calc(.333vw + 1em);
+  font-family: var(--font-sans-serif);
   background-color: var(--color-light);
   color: var(--color-dark);
 }
@@ -87,29 +87,51 @@ main > * {
   display: block;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  max-width: 45rem;
+  max-width: 55rem;
 }
 
 main > * + * {
   margin-block-start: 1em;
 }
 
-main > h2 {
-  margin-block-start: var(--s4);
-}
-
-a {
-  color: var(--color-link);
-}
-a:visited {
-  color: var(--color-link-visited);
-}
-ul.list {
-  padding-left: var(--s2);
-}
-
 .heading {
-  padding-bottom: var(--s2);
-  border-bottom: 1px solid var(--color-border);
-  margin-bottom: var(--s2);
+  margin-block-start: var(--s4);
+  margin-block-end: var(--s2);
+}
+
+.case-studies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-block-start: var(--s4);
+  list-style: none;
+}
+
+.case-studies a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 23.75rem;
+  min-height: 10rem;
+  background-color: var(--color-gray-200);
+  padding: var(--s1);
+  text-decoration: none;
+}
+
+.case-studies a:hover {
+  color: var(--color-light);
+  background: linear-gradient(238deg, #970147 0%, #662B85 100%);
+}
+
+.cs-number {
+  font-size: var(--s2);
+  font-weight: 100;
+  line-height: 1;
+}
+
+.cs-title {
+  font-size: var(--s1);
+  font-weight: 700;
+  line-height: 1;
 }
