@@ -62,10 +62,11 @@
   font-family: inherit;
   color: inherit;
   overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
 :focus {
-  outline: var(--border-thin) solid var(--color-mid);
+  outline: var(--border-thin) solid var(--color-blue-500);
   outline-offset: var(--border-thin);
 }
 
@@ -87,7 +88,7 @@ main > * {
   display: block;
   margin-inline-start: auto;
   margin-inline-end: auto;
-  max-width: 55rem;
+  max-width: 50rem;
 }
 
 main > * + * {
