@@ -21,70 +21,100 @@
   <body>
     <div class="wrapper">
       <main>
-        <div class="heading">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 101 100"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M100.5 50C100.5 77.6142 78.1142 100 50.5 100V50L100.5 0V50Z"
-              fill="url(#paint0_linear_21_13)"
-            />
-            <path
-              d="M50.5 50H0.5V0L50.5 50Z"
-              fill="url(#paint1_linear_21_13)"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_21_13"
-                x1="262.583"
-                y1="2.50002"
-                x2="163.474"
-                y2="156.915"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#970147" />
-                <stop offset="1" stop-color="#662B85" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_21_13"
-                x1="262.583"
-                y1="2.50002"
-                x2="163.474"
-                y2="156.915"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#970147" />
-                <stop offset="1" stop-color="#662B85" />
-              </linearGradient>
-            </defs>
-          </svg>
+        <div class="hero">
+          <div class="hero-logo">
+            <svg width="243" height="117" viewBox="0 0 243 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M157.447 0C161.547 1.95738e-05 165.144 0.718718 168.236 2.15723C171.329 3.5598 173.918 5.44869 176.004 7.82227C178.09 10.1599 179.672 12.731 180.751 15.5361H181.398V3.0791C181.398 1.97461 182.294 1.07923 183.398 1.0791H209.177C210.281 1.07936 211.177 1.97469 211.177 3.0791V83.7227C211.177 90.7354 209.36 96.6872 205.728 101.578C202.131 106.505 197.061 110.263 190.516 112.853C183.97 115.442 176.328 116.736 167.589 116.736C159.281 116.736 152.16 115.55 146.227 113.177C140.329 110.839 135.743 107.602 132.471 103.467C129.675 99.9254 127.939 95.9274 127.263 91.4736C127.088 90.3238 128.014 89.333 129.177 89.333H154.871C155.361 89.3331 155.772 89.6899 155.896 90.1641C156.254 91.547 156.915 92.6911 157.879 93.5947C159.03 94.6734 160.504 95.4466 162.302 95.9141C164.136 96.4175 166.186 96.6689 168.452 96.6689C172.3 96.6689 175.483 95.7342 178 93.8643C180.553 91.9942 181.83 88.6136 181.83 83.7227V69.6973H180.967C179.888 72.5022 178.233 74.8932 176.004 76.8711C173.774 78.813 171.095 80.3057 167.967 81.3486C164.838 82.3556 161.403 82.8594 157.663 82.8594C151.765 82.8594 146.334 81.493 141.371 78.7598C136.444 76.0266 132.489 71.6926 129.504 65.7588C129.021 64.7865 128.578 63.7651 128.174 62.6953V81.9385C128.174 83.0429 127.278 83.9384 126.174 83.9385H100.396C99.292 83.9385 98.3966 83.0429 98.3965 81.9385V35.6035C98.3965 31.9712 97.4786 29.13 95.6445 27.0801C93.8105 24.9945 91.3474 23.9513 88.2549 23.9512C85.198 23.9512 82.7698 24.9942 80.9717 27.0801C79.2095 29.13 78.3281 31.9712 78.3281 35.6035V81.9385C78.328 83.0429 77.4326 83.9385 76.3281 83.9385H51.8457C50.7412 83.9385 49.8458 83.0429 49.8457 81.9385V35.6035C49.8457 31.9713 48.9288 29.13 47.0947 27.0801C45.2606 24.9942 42.7969 23.9512 39.7041 23.9512C37.6542 23.9512 35.8915 24.4194 34.417 25.3545C32.9428 26.2895 31.7919 27.6376 30.9648 29.3994C30.1737 31.1256 29.7783 33.194 29.7783 35.6035V81.9385C29.7782 83.0429 28.8827 83.9383 27.7783 83.9385H2C0.895704 83.9382 0.000118781 83.0428 0 81.9385V3.0791C0 1.97468 0.895632 1.07934 2 1.0791H26.2676C27.3721 1.0791 28.2676 1.97453 28.2676 3.0791V16.8311H29.1309C30.8571 11.6524 33.8058 7.55216 37.9775 4.53125C42.1492 1.51039 47.1122 5.12011e-05 52.8662 0C58.6923 0 63.7093 1.54681 67.917 4.63965C72.1246 7.69652 74.6603 11.7603 75.5234 16.8311H76.3867C77.7893 11.7602 80.7745 7.69653 85.3418 4.63965C89.9091 1.54684 95.2673 0 101.417 0C109.365 4.51726e-06 115.803 2.55337 120.729 7.66016C124.616 11.6591 126.979 16.6947 127.822 22.7666C128.372 21.1196 129.005 19.572 129.72 18.125C132.848 11.8677 136.876 7.2821 141.803 4.36914C146.766 1.45611 151.981 0 157.447 0ZM227.313 55.6719C231.269 55.6719 234.757 57.1281 237.778 60.041C240.835 62.954 242.382 66.4607 242.418 70.5605C242.382 73.3656 241.645 75.9191 240.206 78.2207C238.804 80.4862 236.97 82.3024 234.704 83.6689C232.438 84.9996 229.975 85.665 227.313 85.665C223.142 85.665 219.563 84.2079 216.578 81.2949C213.629 78.346 212.173 74.768 212.209 70.5605C212.173 66.4608 213.629 62.954 216.578 60.041C219.563 57.128 223.142 55.6719 227.313 55.6719ZM168.668 22.873C165.935 22.873 163.597 23.6639 161.655 25.2461C159.749 26.7925 158.274 29.0403 157.231 31.9893C156.224 34.9023 155.721 38.409 155.721 42.5088C155.721 46.6084 156.225 50.0967 157.231 52.9736C158.274 55.8147 159.749 57.9905 161.655 59.501C163.597 60.9754 165.935 61.7129 168.668 61.7129C171.401 61.7128 173.739 60.9577 175.681 59.4473C177.659 57.9009 179.169 55.7072 180.212 52.8662C181.291 49.9892 181.83 46.5366 181.83 42.5088C181.83 38.409 181.291 34.9023 180.212 31.9893C179.169 29.0403 177.659 26.7925 175.681 25.2461C173.739 23.6638 171.401 22.8731 168.668 22.873Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="hero-message">
+            <p><strong>Hi, I'm Marcin,</strong> Product Designer focused on usability, design systems,and scalable interfaces. Bridging UX and front-end to deliver cohesive, user-centered digital experiences.</p>
+          </div>
+          <div class="hero-image">
+            <img src="assets/img/me.png" width="395" height="395" alt="Marcin Galeza" />
+          </div>
         </div>
-        <p>
-          Hi 👋, I'm Marcin Galeza, a <strong>Senior Product Designer</strong> with over <strong>20 years</strong> of experience crafting elegant, performant user interfaces. My background spans a wide range of digital products, with a strong emphasis on <strong>usability</strong>, <strong>scalability</strong>, and <strong>design consistency</strong>.
-        </p>
-        <p>
-          In recent years, I’ve focused on developing and maintaining <strong>Design Systems</strong> using tools like <strong>React</strong>, <strong>Vue</strong>, <strong>Storybook</strong>, and <strong>TailwindCSS</strong> - bridging the gap between design and front-end engineering. I apply a deep UX mindset, paired with technical skills, to turn ideas into reality through code.
-        </p>
+        <h2 class="sub-heading">Experience</h2>
+        <ul class="experience">
+          <li class="experience-item">
+            <div class="experience-meta">
+              <div class="experience-icon">
+                <img src="assets/img/zight.svg" width="24" height="24" alt="Zight" />
+              </div>
+              <div class="experience-content">
+                <span class="experience-company"><b>ZIGHT</b>, San Francisco CA, USA (remote)</span>
+                <span class="experience-date">April 2022 - June 2025</span>
+              </div>
+            </div>
+            <div class="experience-tags">
+              <span class="experience-tag">Product Design</span>
+              <span class="experience-tag">Design System Engineering</span>
+            </div>
+          </li>
+          <li class="experience-item">
+            <div class="experience-meta">
+              <div class="experience-icon">
+                <img src="assets/img/filestack.svg" width="24" height="24" alt="Filestack" />
+              </div>
+              <div class="experience-content">
+                <span class="experience-company"><b>FILESTACK</b>, San Antonio TX, USA (remote)</span>
+                <span class="experience-date">March 2014 - March 2022</span>
+              </div>
+            </div>
+            <div class="experience-tags">
+              <span class="experience-tag">Product Design</span>
+              <span class="experience-tag">Design System Engineering</span>
+            </div>
+          </li>
+          <li class="experience-item">
+            <div class="experience-meta">
+              <div class="experience-icon">
+                <img src="assets/img/tint.svg" width="24" height="24" alt="Tint" />
+              </div>
+              <div class="experience-content">
+                <span class="experience-company"><b>TINT</b>, San Antonio TX, USA (remote)</span>
+                <span class="experience-date">September 2018 - December 2021</span>
+              </div>
+            </div>
+            <div class="experience-tags">
+              <span class="experience-tag">Design System Engineering</span>
+            </div>
+          </li>
+          <li class="experience-item">
+            <div class="experience-meta">
+              <div class="experience-icon">
+                <img src="assets/img/transform-tool.svg" width="24" height="24" alt="Various projects, and Freelancing" />
+              </div>
+              <div class="experience-content">
+                <span class="experience-company">Various projects, and Freelancing</span>
+                <span class="experience-date">September 2002 - December 2014</span>
+              </div>
+            </div>
+            <div class="experience-tags">
+              <span class="experience-tag">UX/UI Design</span>
+              <span class="experience-tag">Branding</span>
+              <span class="experience-tag">Design System Engineering</span>
+            </div>
+          </li>
+        </ul>
         <h2 class="sub-heading">Selected Case studies</h2>
         <ul class="case-studies">
           <li>
-            <a target="_blank" href="https://www.figma.com/proto/eRa1QRo990eQtxvF4AOVnM/Case-Study---Zight-Design-System?page-id=0%3A1&node-id=1-24&p=f&viewport=602%2C-573%2C0.96&t=WPMUtxrKFgp2kPCT-1&scaling=min-zoom&content-scaling=fixed">
-              <span class="cs-number">01</span>
-              <span class="cs-title">Zight Design System</span>
+            <a class="case-study-link" target="_blank" href="https://www.figma.com/proto/eRa1QRo990eQtxvF4AOVnM/Case-Study---Zight-Design-System?page-id=0%3A1&node-id=1-24&p=f&viewport=602%2C-573%2C0.96&t=WPMUtxrKFgp2kPCT-1&scaling=min-zoom&content-scaling=fixed">
+              <span class="case-study-number">01.</span>
+              <span class="case-study-title">Zight Design System</span>
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.figma.com/proto/gW2clLsx5gxV8Y5SQC8H24/Case-Study---Copernicus-Viewer?page-id=0%3A1&node-id=1-24&p=f&viewport=433%2C-990%2C0.45&t=vvHjs7EjK8a65IRa-1&scaling=min-zoom&content-scaling=fixed">
-              <span class="cs-number">02</span>
-              <span class="cs-title">Copernicus Viewer</span>
+            <a class="case-study-link" target="_blank" href="https://www.figma.com/proto/gW2clLsx5gxV8Y5SQC8H24/Case-Study---Copernicus-Viewer?page-id=0%3A1&node-id=1-24&p=f&viewport=433%2C-990%2C0.45&t=vvHjs7EjK8a65IRa-1&scaling=min-zoom&content-scaling=fixed">
+              <span class="case-study-number">02.</span>
+              <span class="case-study-title">Copernicus Viewer</span>
             </a>
           </li>
         </ul>
-        <p>If you want to hire me, or just say hi: <a href="mailto:marcin.galeza@gmail.com">marcin.galeza@gmail.com</a></p>
+        <footer class="footer">
+          <p>If you want to hire me, or just say hi: <a href="mailto:marcin.galeza@gmail.com">marcin.galeza@gmail.com</a></p>
+        </footer>
       </main>
     </div>
   </body>
