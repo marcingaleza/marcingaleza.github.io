@@ -32,16 +32,17 @@
   --base-black: #212529;
   --base-white: #FFFFFF;
 
-  --font-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-  --font-serif: "Noto Serif", Georgia, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --font-sans-serif: "TikTok Sans", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-serif: Georgia, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 }
 
 
 /* Tokens */
 :root {
   --surface-base: var(--base-white);
-  --surface-primary: var(--grey-100);
-  --surface-tertiary: var(--grey-50);
+  --surface-primary: var(--grey-50);
+  --surface-secondary: var(--grey-100);
+  --surface-tertiary: var(--grey-200);
   --surface-inverted: var(--base-black);
 
   --border-primary: var(--grey-300);
@@ -54,8 +55,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --surface-base: var(--base-black);
-    --surface-primary: var(--grey-900);
-    --surface-tertiary: var(--grey-950);
+    --surface-primary: var(--grey-950);
+    --surface-secondary: var(--grey-900);
+    --surface-tertiary: var(--grey-800);
     --surface-inverted: var(--base-white);
 
     --border-primary: var(--grey-700);
