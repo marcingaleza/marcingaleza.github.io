@@ -277,7 +277,7 @@ main > * + * {
 
 .case-studies {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   gap: var(--spacing-6, 1.5rem);
   list-style: none;
 }
